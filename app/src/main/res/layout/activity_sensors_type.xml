@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SensorsTypeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="#0272A6">
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="0dp">
+
+        <Button
+            android:id="@+id/btn_physical"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:text="Physical\nSensors"
+            android:textStyle="bold"
+            android:padding="40dp"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:background="#a6767c"
+            android:textColor="#fff"
+
+            ></Button>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#fff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="0dp">
+
+        <Button
+            android:id="@+id/btn_physiological"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:text="Motion Activity\nSensors"
+            android:textStyle="bold"
+            android:padding="40dp"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:background="#a6767c"
+            android:textColor="#fff"
+
+            ></Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:weightSum="2">
+
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/current2"
+            android:layout_weight="1"
+            android:background="@mipmap/logo"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

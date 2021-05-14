@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SensorsTypeActivity">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swip_realtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".SensorsTypeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="#0272A6">
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#808080"
+            android:weightSum="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btn_studyroom"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:text="Study\nroom"
+                android:textStyle="bold"
+                android:padding="40dp"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#808080"
+                android:textColor="#fff"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_studydate"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="150dp"
+            android:background="#FFF" />
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#808080"
+            android:weightSum="2"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/btn_bathroom"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:text="Bath\nRoom"
+                android:textStyle="bold"
+                android:padding="40dp"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#808080"
+                android:textColor="#fff"
+
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_bathdate"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:background="#808080"
+                >
+            </TextView>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#fff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#808080"
+            android:weightSum="2"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/btn_liveroom2"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:text="Living\nRoom-2"
+                android:textStyle="bold"
+                android:padding="40dp"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#808080"
+                android:textColor="#fff"
+
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_liveroom_2"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:background="#808080"
+                >
+            </TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="150dp"
+            android:background="#FFF" />
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:background="#808080"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/btn_kitchen"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:text="Kitchen"
+                android:textStyle="bold"
+                android:padding="40dp"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#808080"
+                android:textColor="#fff"
+
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_kitchendate"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:background="#808080"
+                >
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#fff"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#808080"
+            android:weightSum="2"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/btn_liveroom1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:text="Living\nRoom-1"
+                android:textStyle="bold"
+                android:padding="40dp"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:background="#808080"
+                android:textColor="#fff"
+                android:layout_weight="1"
+
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_liveroom_1"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="#808080"
+                android:layout_weight="1"
+                >
+            </TextView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="150dp"
+            android:background="#FFF" />
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#808080"
+            android:weightSum="2"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/btn_bedroom"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:text="Bedroom"
+                android:textStyle="bold"
+                android:padding="40dp"
+                android:layout_weight="1"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:background="#808080"
+                android:textColor="#fff"
+
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_bedroom"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:background="#808080"
+                >
+            </TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:weightSum="2">
+
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/current2"
+            android:layout_weight="1"
+            android:background="@mipmap/logo"
+            />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>
